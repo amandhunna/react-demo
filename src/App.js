@@ -3,8 +3,7 @@ import Routes from './Route';
 function App() {
   return (
     <div className="App">
-     <Routes />
-     <h1>adasdadas</h1>
+      <Routes />
     </div>
   );
 }
