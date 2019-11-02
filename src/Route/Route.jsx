@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from '../scenes/Login';
 import Layout from '../Layout';
 const Routes = () => (
-  <>  <Layout />
+  <>  
+  <Layout />
     <Router>
       <Switch>
         <Route exact path="/" component={Login} />
