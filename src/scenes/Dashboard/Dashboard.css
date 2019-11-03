@@ -1,0 +1,32 @@
+.dashboard-page-div {
+}
+
+.part1 {
+  height: 57rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: yellow;
+  font-family: monospace;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+}
+
+.agree {
+  background: darkseagreen!important;
+  color: white !important;
+  font-family: none !important;
+  background: violet !important;
+  margin: 5% !important;
+}
+
+.reason {
+  color: white !important;
+  font-family: none !important;
+  background: red !important;
+  margin: 5% !important;
+}
