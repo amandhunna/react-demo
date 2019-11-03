@@ -7,7 +7,7 @@ const Dashboard = () => {
         <div className='dashboard-page-div' >
             <div className='part1' style={{ backgroundImage: `url("/ginni.jpg")` }}>
                 <h1>People who love cars will like this</h1>
-                <div class='flex agree-reason'>
+                <div className='flex agree-reason'>
                     <Button className='agree'>Agreed and Explore more</Button>
                     <Button className='reason'>Need Reasons to Love this</Button>
                 </div>
