@@ -1,19 +1,16 @@
 import React from 'react';
 import Routes from './Route';
 import './App.css';
-import { AuthProvider, AuthConsumer } from './Context'
+import { AuthProvider } from './Context';
+import Navbar from './Components/NabBar';
 
 function App() {
   return (
     <AuthProvider>
       <div className="App">
-        <AuthConsumer>
-          {({isLoggedIn}) =>{ console.log('--------', value)
-           return <Routes />
-           }}
-        </AuthConsumer>
-
-      </div >
+        <Navbar />
+        <Routes />
+      </div>
     </AuthProvider>
   );
 }

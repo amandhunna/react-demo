@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import config from './config';
+import config from '../config';
 
 const AuthContext = React.createContext({});
 
@@ -8,4 +8,3 @@ export const AuthProvider = ({ children }) => {
     return (<AuthContext.Provider value={{ isLoggedIn, setIsLogin }}>{children} </AuthContext.Provider>);
 };
 export const AuthConsumer = AuthContext.Consumer;
-export default AuthContext;
