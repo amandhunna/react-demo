@@ -1,5 +1,12 @@
 .nav-button {
-    color: white !important;
-    font-weight: 600 !important;
-    margin-left: 3% !important;
+  color: white !important;
+  font-weight: 600 !important;
+  margin-left: 3% !important;
+}
+.login-nav-button > * {
+  color: white !important;
+  background: violet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

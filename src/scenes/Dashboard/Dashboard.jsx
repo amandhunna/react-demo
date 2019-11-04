@@ -2,13 +2,15 @@ import React from 'react';
 import Button from '../../Components/Button';
 import './Dashboard.css';
 import { AuthConsumer } from '../../Context';
-import RedirectToLogin from '../../Components/RedirectToLogin'
+import RedirectTo from '../../Components/RedirectTo'
 
 const Dashboard = () => {
     return (
         <AuthConsumer>
             {({ isLoggedIn }) => {
-                if (JSON.parse(isLoggedIn.isLoggedIn)) {
+                const loginFLag = (typeof isLoggedIn) === 'string' ? isLoggedIn === 'true' : isLoggedIn; 
+               console.log(loginFLag, typeof loginFLag)
+                if (loginFLag) {
                     return (
                         <>
                             <div className='dashboard-page-div' >
@@ -22,7 +24,7 @@ const Dashboard = () => {
                             </div>
                         </>);
                 }
-                else return RedirectToLogin();
+                else return RedirectTo('login');
             }}
         </AuthConsumer>
     );
